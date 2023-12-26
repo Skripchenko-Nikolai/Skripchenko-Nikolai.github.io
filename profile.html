@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willberries</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- class="show-goods" -->
+
+<body id="body">
+    <header class="container header px-4 px-md-0">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-2 col-6">
+                <a href="index.html" class="logo-link" title="Ссылка на сайт">
+                    <img width="128" src="img/logo.svg" alt="logo: Willberries" class="logo-image"
+                        onerror="this.src='https://komfort-pluss.ru/wp-content/uploads/2020/01/net-izobrazheniya.jpg'">
+                </a>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <nav>
+                    <ul class="navigation d-flex justify-content-around">
+                        <li class="navigation-item">
+                            <a href="#" class="navigation-link" data-field="gender"
+                                title="Ссылка на категорию женщины">Womens</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#" class="navigation-link" data-field="gender"
+                                title="Ссылка на категорию мужчины">Mens</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#" class="navigation-link" data-field="category"
+                                title="Ссылка на категорию одежда">Clothing</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#" class="navigation-link" data-field="category"
+                                title="Ссылка на категорию аксесуары">Accessories</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#" class="navigation-link" data-field="category"
+                                title="Ссылка на категорию обувь">Shoes</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="#" class="navigation-link view-all" title="Ссылка на категорию все">All</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-2 col-6 d-flex justify-content-end">
+                <button class="button button-cart">
+                    <img class="button-icon" src="img/cart.svg" alt="icon: cart"
+                        onerror="this.src='https://komfort-pluss.ru/wp-content/uploads/2020/01/net-izobrazheniya.jpg'">
+                    <span class="button-text">Cart</span>
+                    <span class="button-text cart-count"></span>
+                </button>
+            </div>
+            <div class="col-lg-2 col-6 d-flex justify-content-end">
+                <button class="button button-cart">
+                    <span class="button-text">Profile</span>
+                    <span class="button-text cart-count"></span>
+                </button>
+            </div>
+        </div>
+        <!-- /.row -->
+    </header>
+    <div class="auth-wrap">
+        <div class="auth-col">
+            <h2>login</h2>
+            <form class="login">
+                <p>
+                    <label for="username">E-mail <span class="required">*</span></label><input type="text"
+                        id="username">
+                </p>
+                <p>
+                    <label for="password">Password <span class="required">*</span></label><input type="password"
+                        id="password">
+                </p>
+                <p class="auth-submit">
+                    <input value="Login">
+                </p>
+            </form>
+        </div>
+        <div class="auth-col">
+            <h2>Register</h2>
+            <form class="register">
+                <p>
+                    <label for="reg_email">E-mail <span class="required">*</span></label><input type="email"
+                        id="reg_email">
+                </p>
+                <p>
+                    <label for="reg_epassword">Password <span class="required">*</span></label><input type="password"
+                        id="reg_epassword">
+                </p>
+                <p class="auth-submit-reg">
+                    <input value="Register">
+                </p>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 mb-4 mb-xl-0">
+                    <nav>
+                        <ul class="footer-menu d-sm-flex">
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link"
+                                    title="Ссылка на раздел магазин">Shop</a></li>
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link"
+                                    title="Ссылка на раздел о компании">About Us</a></li>
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link"
+                                    title="Ссылка на раздел карьера">Careers</a></li>
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link"
+                                    title="Ссылка на раздел вопросы">FAQ </a></li>
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link"
+                                    title="Ссылка на раздел блог">Blog</a></li>
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link"
+                                    title="Ссылка на раздел контакты">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /.col-7 -->
+                <div class="col-lg-3 d-flex align-items-center">
+                    <span class="footer-text">Follow Us</span>
+                    <span class="footer-social d-inline-flex align-items-center">
+                        <a href="#" class="social-link" title="Ссылка на Facebook">
+                            <img src="img/Facebook.svg" alt="Facebook"
+                                onerror="this.src='https://komfort-pluss.ru/wp-content/uploads/2020/01/net-izobrazheniya.jpg'">
+                        </a>
+                        <a href="#" class="social-link" title="Ссылка на Twitter">
+                            <img src="img/Twitter.svg" alt="Twitter"
+                                onerror="this.src='https://komfort-pluss.ru/wp-content/uploads/2020/01/net-izobrazheniya.jpg'">
+                        </a>
+                        <a href="#" class="social-link" title="Ссылка на Instagram">
+                            <img src="img/Instagram.svg" alt="Instagram"
+                                onerror="this.src='https://komfort-pluss.ru/wp-content/uploads/2020/01/net-izobrazheniya.jpg'">
+                        </a>
+                    </span>
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-xl-2 col-lg-3 d-flex justify-content-lg-end mt-4 mt-lg-0">
+                    <span class="footer-text">© 2019 Universal UI Kit</span>
+                </div>
+                <!-- /.col-2 -->
+            </div>
+            <!-- /.row -->
+            <hr class="footer-line mt-4 mb-4">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-sm-9">
+                    <img class="payment-logo" src="img/visa.png" alt="visa logo"
+                        onerror="this.src='https://komfort-pluss.ru/wp-content/uploads/2020/01/net-izobrazheniya.jpg'">
+                    <img class="payment-logo" src="img/master-card.png" alt="master card logo"
+                        onerror="this.src='https://komfort-pluss.ru/wp-content/uploads/2020/01/net-izobrazheniya.jpg'">
+                    <img class="payment-logo" src="img/paypal.png" alt="paypal logo "
+                        onerror="this.src='https://komfort-pluss.ru/wp-content/uploads/2020/01/net-izobrazheniya.jpg'">
+                    <img class="payment-logo" src="img/bitcoin.png" alt="bitcoin logo"
+                        onerror="this.src='https://komfort-pluss.ru/wp-content/uploads/2020/01/net-izobrazheniya.jpg'">
+                </div>
+                <!-- /.col-4 -->
+                <div class="col-lg-2 col-sm-1 d-flex justify-content-end">
+                    <a href="#body" class="scroll-link top-link d-flex align-items-center"
+                        title="Ссылка на категорию топ">
+                        <span class="top-link-text">Top</span>
+                        <img src="img/top.svg" alt="icon: arrow top"
+                            onerror="this.src='https://komfort-pluss.ru/wp-content/uploads/2020/01/net-izobrazheniya.jpg'">
+                    </a>
+                </div>
+                <!-- /.col-2 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </footer>
+    <div class="overlay" id="modal-cart">
+        <div class="modal">
+            <header class="modal-header">
+                <h2 class="modal-title">Cart</h2>
+                <button class="modal-close">x</button>
+            </header>
+            <table class="cart-table">
+                <colgroup>
+                    <col class="col-goods">
+                    <col class="col-price">
+                    <col class="col-minus">
+                    <col class="col-qty">
+                    <col class="col-plus">
+                    <col class="col-total-price">
+                    <col class="col-delete">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Good(s)</th>
+                        <th>Price</th>
+                        <th colspan="3">Qty.</th>
+                        <th colspan="2">Total</th>
+                    </tr>
+                </thead>
+                <tbody class="cart-table__goods">
+                    <tr class="cart-item" data-id="003">
+                        <td>Sweater</td>
+                        <td>250$</td>
+                        <td><button class="cart-btn-minus">-</button></td>
+                        <td>2</td>
+                        <td><button class="cart-btn-plus">+</button></td>
+                        <td>500$</td>
+                        <td><button class="cart-btn-delete">x</button></td>
+                    </tr>
+                    <tr class="cart-item" data-id="003">
+                        <td>Sweater</td>
+                        <td>250$</td>
+                        <td><button class="cart-btn-minus">-</button></td>
+                        <td>2</td>
+                        <td><button class="cart-btn-plus">+</button></td>
+                        <td>500$</td>
+                        <td><button class="cart-btn-delete">x</button></td>
+                    </tr>
+                    <tr class="cart-item" data-id="003">
+                        <td>Sweater</td>
+                        <td>250$</td>
+                        <td><button class="cart-btn-minus">-</button></td>
+                        <td>2</td>
+                        <td><button class="cart-btn-plus">+</button></td>
+                        <td>500$</td>
+                        <td><button class="cart-btn-delete">x</button></td>
+                    </tr>
+
+
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="5">Total:</th>
+                        <th class="card-table__total" colspan="2">1500$</th>
+                    </tr>
+
+                </tfoot>
+            </table>
+            <form class="modal-form" action="">
+                <input class="modal-input" type="text" placeholder="Имя" name="nameCustomer">
+                <input class="modal-input" type="text" placeholder="Телефон" name="phoneCustomer">
+                <button class="button cart-buy">
+                    <span class="button-text">Checkout</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
