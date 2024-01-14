@@ -11,6 +11,7 @@ const mySwiper = new Swiper('.swiper-container', {
 //корзина (cart)
 
 const buttonCart = document.querySelector('.button-cart');
+const buttonProfile = document.querySelector('.button-profile');
 const modelCard = document.querySelector('#modal-cart');
 const viewAll = document.querySelectorAll('.view-all');
 const navigationLink = document.querySelectorAll('.navigation-link:not(.view-all)');
@@ -130,6 +131,12 @@ const openModel = function(){
 	cart.renderCart();
 	modelCard.classList.add('show');
 }; 
+
+const openProfile = function(){
+	cart.renderCart();
+	modelCard.classList.add('show');
+}; 
+
 const closeModel = function(){
 	modelCard.classList.remove('show');
 }; 
