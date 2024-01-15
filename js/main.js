@@ -102,7 +102,6 @@ const cart  = {
 
 document.body.addEventListener('click', event => {
 	const addToCart = event.target.closest('.add-to-cart');
-	console.log(addToCart);
 
 	if(addToCart){
 		cart.addCartGoods(addToCart.dataset.id);
